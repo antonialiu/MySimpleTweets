@@ -41,6 +41,9 @@ public class ComposeActivity extends AppCompatActivity {
             if (s.length() > 280) {
                 tvCharCount.setTextColor(Color.RED);
             }
+            if (s.length() <= 280) {
+                tvCharCount.setTextColor(Color.GRAY);
+            }
         }
 
         public void afterTextChanged(Editable s) {

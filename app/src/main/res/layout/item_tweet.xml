@@ -67,16 +67,20 @@
         app:layout_constraintStart_toEndOf="@+id/tvUsername"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <!--<ImageView-->
-        <!--android:id="@+id/ivImage"-->
-        <!--android:layout_width="0dp"-->
-        <!--android:layout_height="wrap_content"-->
-        <!--android:layout_marginStart="8dp"-->
-        <!--android:layout_marginTop="8dp"-->
-        <!--android:layout_marginEnd="8dp"-->
-        <!--app:layout_constraintEnd_toEndOf="parent"-->
-        <!--app:layout_constraintStart_toEndOf="@+id/ivProfileImage"-->
-        <!--app:layout_constraintTop_toBottomOf="@+id/tvBody"-->
-        <!--app:srcCompat="@color/inline_action_disabled" />-->
+    <ImageView
+        android:id="@+id/ivImage"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/ivProfileImage"
+        app:layout_constraintTop_toBottomOf="@+id/tvBody"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@color/light_gray" />
 
 </android.support.constraint.ConstraintLayout>

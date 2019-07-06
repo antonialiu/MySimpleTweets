@@ -50,9 +50,9 @@ public class TweetAdapter extends RecyclerView.Adapter<TweetAdapter.ViewHolder> 
         Glide.with(context)
                 .load(tweet.user.profileImageUrl)
                 .into(viewHolder.ivProfileImage);
-//        Glide.with(context)
-//                .load(tweet.entities.mediaUrl)
-//                .into(viewHolder.ivProfileImage);
+        Glide.with(context)
+                .load(tweet.entities.mediaUrl)
+                .into(viewHolder.ivImage);
     }
 
     @Override
@@ -104,7 +104,7 @@ public class TweetAdapter extends RecyclerView.Adapter<TweetAdapter.ViewHolder> 
             tvBody = (TextView) itemView.findViewById(R.id.tvBody);
             tvTimestamp = (TextView) itemView.findViewById(R.id.tvTimestamp);
             tvHandle = (TextView) itemView.findViewById(R.id.tvHandle);
-            // ivImage = (ImageView) itemView.findViewById(R.id.ivImage);
+            ivImage = (ImageView) itemView.findViewById(R.id.ivImage);
 
         }
     }

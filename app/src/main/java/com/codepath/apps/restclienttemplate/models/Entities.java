@@ -5,12 +5,13 @@ import org.json.JSONObject;
 
 public class Entities {
 
-    public static String mediaUrl;
+    public String mediaUrl;
 
     public static Entities fromJSON(JSONObject json) throws JSONException {
         Entities entities = new Entities();
-
-        Entities.mediaUrl = json.getString("media/media_url_https");
+        if (json.has("media")) {
+            entities.mediaUrl = json.getJSONArray("media").getJSONObject(0).getString("media_url_https");
+        }
 
         return entities;
     }
